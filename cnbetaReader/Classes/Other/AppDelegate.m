@@ -14,6 +14,7 @@
 #import "UMSocialAlipayShareHandler.h"
 #import "UMSocialYiXinHandler.h"
 #import "UMSocialSinaSSOHandler.h"
+#import "LSCommentTool.h"
 
 #define UMAPPKEY @"56a9db4067e58e42620027af"
 #define WXAPPID @"wxefbcbad8b6bd537e"
@@ -35,6 +36,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setUpUMSocial];
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:AUTOREFRESH]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:AUTOREFRESH];
+    }
+    
+//    [LSCommentTool loadCommentListWithSid:@"483033" pageNum:@"1" SN:@"ee5a0" success:^(NSArray *commentListArray) {
+//        
+//    }];
     
     return YES;
 }

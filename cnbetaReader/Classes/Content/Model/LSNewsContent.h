@@ -16,5 +16,6 @@
 @property (nonatomic, copy) NSString *bodytext;
 @property (nonatomic, copy) NSString *source;
 @property (nonatomic, copy) NSString *time;
+@property (nonatomic, copy) NSString *sn;
 
 @end

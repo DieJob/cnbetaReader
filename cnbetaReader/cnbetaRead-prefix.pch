@@ -1,0 +1,18 @@
+//
+//  cnbetaRead-prefix.pch
+//  cnbetaReader
+//
+//  Created by 嘟嘟洒水车 on 16/3/12.
+//  Copyright © 2016年 嘟嘟洒水车. All rights reserved.
+//
+
+#ifndef cnbetaRead_prefix_pch
+#define cnbetaRead_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* cnbetaRead_prefix_pch */
+
+#define AUTOLOADIMAGE @"autoLoadImage"
+#define AUTOREFRESH @"autoRefresh"

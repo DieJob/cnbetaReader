@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '740E967C208A642385F02483'
+               BlueprintIdentifier = 'A125919AE27D0EC7E8B01C72'
                BlueprintName = 'ObjectiveGumbo'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libObjectiveGumbo.a'>

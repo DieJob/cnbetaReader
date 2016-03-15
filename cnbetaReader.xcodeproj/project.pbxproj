@@ -15,6 +15,7 @@
 		CF1D72761C4D851F00F957F1 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = CF1D72701C4D851F00F957F1 /* style.css */; };
 		CF1D72771C4D851F00F957F1 /* VideoTool.js in Resources */ = {isa = PBXBuildFile; fileRef = CF1D72711C4D851F00F957F1 /* VideoTool.js */; };
 		CF4B6AF11C6091D300CB04B5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4B6AF01C6091D300CB04B5 /* ImageIO.framework */; };
+		CFAD67431C956450001937FD /* LSCmntlist.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAD67421C956450001937FD /* LSCmntlist.m */; };
 		CFC82C401C4A9923005B9E62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC82C3F1C4A9923005B9E62 /* main.m */; };
 		CFC82C4B1C4A9923005B9E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC82C4A1C4A9923005B9E62 /* Assets.xcassets */; };
 		CFC82C591C4A9923005B9E62 /* cnbetaReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC82C581C4A9923005B9E62 /* cnbetaReaderTests.m */; };
@@ -50,7 +51,6 @@
 		CFCAA1D41C8373FF00C3347E /* libSocialYiXin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCAA1AC1C8373FF00C3347E /* libSocialYiXin.a */; };
 		CFCAA1D51C83740000C3347E /* libYixinSDK_V2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCAA1AD1C8373FF00C3347E /* libYixinSDK_V2.2.a */; };
 		CFCAA1D61C83740000C3347E /* LSHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCAA1B41C8373FF00C3347E /* LSHttpTool.m */; };
-		CFCAA1D71C83740000C3347E /* LSNewsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCAA1B61C8373FF00C3347E /* LSNewsTool.m */; };
 		CFCAA1DA1C83748700C3347E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCAA1D91C83748700C3347E /* AppDelegate.m */; };
 		CFCAA1DD1C83762B00C3347E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCAA1DB1C83762B00C3347E /* Main.storyboard */; };
 		CFDB4FDA1C5A6598008BAF48 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDB4FD91C5A6598008BAF48 /* Security.framework */; };
@@ -61,6 +61,14 @@
 		CFDB4FE51C5A65D5008BAF48 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDB4FE41C5A65D5008BAF48 /* CoreTelephony.framework */; };
 		CFDB4FE71C5A65DF008BAF48 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDB4FE61C5A65DF008BAF48 /* libstdc++.tbd */; };
 		CFDB4FE91C5A65E7008BAF48 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDB4FE81C5A65E7008BAF48 /* libz.tbd */; };
+		CFE9E2341C93CD950013C738 /* LSSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE9E2331C93CD950013C738 /* LSSettingController.m */; };
+		CFE9E23A1C93F9660013C738 /* LSNewsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE9E2391C93F9660013C738 /* LSNewsTool.m */; };
+		CFE9E23D1C93F9D60013C738 /* LSNewsCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE9E23C1C93F9D60013C738 /* LSNewsCacheTool.m */; };
+		CFE9E2401C940ABE0013C738 /* LSCommentTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE9E23F1C940ABE0013C738 /* LSCommentTool.m */; };
+		CFE9E2471C9429520013C738 /* LSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE9E2461C9429520013C738 /* LSComment.m */; };
+		CFE9E24A1C9433E00013C738 /* LSCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE9E2491C9433E00013C738 /* LSCommentController.m */; };
+		CFE9E24E1C9434A40013C738 /* LSCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE9E24C1C9434A40013C738 /* LSCommentCell.m */; };
+		CFE9E24F1C9434A40013C738 /* LSCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE9E24D1C9434A40013C738 /* LSCommentCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +99,8 @@
 		CF1D72701C4D851F00F957F1 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		CF1D72711C4D851F00F957F1 /* VideoTool.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = VideoTool.js; sourceTree = "<group>"; };
 		CF4B6AF01C6091D300CB04B5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		CFAD67411C956450001937FD /* LSCmntlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCmntlist.h; sourceTree = "<group>"; };
+		CFAD67421C956450001937FD /* LSCmntlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCmntlist.m; sourceTree = "<group>"; };
 		CFC82C3B1C4A9923005B9E62 /* cnbetaReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cnbetaReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC82C3F1C4A9923005B9E62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFC82C4A1C4A9923005B9E62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,8 +183,6 @@
 		CFCAA1B01C8373FF00C3347E /* YXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXApiObject.h; sourceTree = "<group>"; };
 		CFCAA1B31C8373FF00C3347E /* LSHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHttpTool.h; sourceTree = "<group>"; };
 		CFCAA1B41C8373FF00C3347E /* LSHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHttpTool.m; sourceTree = "<group>"; };
-		CFCAA1B51C8373FF00C3347E /* LSNewsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNewsTool.h; sourceTree = "<group>"; };
-		CFCAA1B61C8373FF00C3347E /* LSNewsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNewsTool.m; sourceTree = "<group>"; };
 		CFCAA1D81C83748700C3347E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CFCAA1D91C83748700C3347E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CFCAA1DC1C83762B00C3347E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -187,6 +195,22 @@
 		CFDB4FE61C5A65DF008BAF48 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		CFDB4FE81C5A65E7008BAF48 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CFDC9DCE1C5639480023E66C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CFE9E2321C93CD950013C738 /* LSSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSettingController.h; sourceTree = "<group>"; };
+		CFE9E2331C93CD950013C738 /* LSSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSSettingController.m; sourceTree = "<group>"; };
+		CFE9E2351C93F7080013C738 /* cnbetaRead-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cnbetaRead-prefix.pch"; sourceTree = "<group>"; };
+		CFE9E2381C93F9660013C738 /* LSNewsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNewsTool.h; sourceTree = "<group>"; };
+		CFE9E2391C93F9660013C738 /* LSNewsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNewsTool.m; sourceTree = "<group>"; };
+		CFE9E23B1C93F9D60013C738 /* LSNewsCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNewsCacheTool.h; sourceTree = "<group>"; };
+		CFE9E23C1C93F9D60013C738 /* LSNewsCacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNewsCacheTool.m; sourceTree = "<group>"; };
+		CFE9E23E1C940ABE0013C738 /* LSCommentTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCommentTool.h; sourceTree = "<group>"; };
+		CFE9E23F1C940ABE0013C738 /* LSCommentTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCommentTool.m; sourceTree = "<group>"; };
+		CFE9E2451C9429520013C738 /* LSComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSComment.h; sourceTree = "<group>"; };
+		CFE9E2461C9429520013C738 /* LSComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSComment.m; sourceTree = "<group>"; };
+		CFE9E2481C9433E00013C738 /* LSCommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCommentController.h; sourceTree = "<group>"; };
+		CFE9E2491C9433E00013C738 /* LSCommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCommentController.m; sourceTree = "<group>"; };
+		CFE9E24B1C9434A40013C738 /* LSCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCommentCell.h; sourceTree = "<group>"; };
+		CFE9E24C1C9434A40013C738 /* LSCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCommentCell.m; sourceTree = "<group>"; };
+		CFE9E24D1C9434A40013C738 /* LSCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSCommentCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +330,7 @@
 				CF1D72701C4D851F00F957F1 /* style.css */,
 				CF1D72711C4D851F00F957F1 /* VideoTool.js */,
 				CFC82C3F1C4A9923005B9E62 /* main.m */,
+				CFE9E2351C93F7080013C738 /* cnbetaRead-prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -331,6 +356,8 @@
 		CFCAA14E1C8373FF00C3347E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CFE9E2411C94150A0013C738 /* Comment */,
+				CFE9E22E1C93CD3E0013C738 /* Setting */,
 				CFCAA14F1C8373FF00C3347E /* Content */,
 				CFCAA1581C8373FF00C3347E /* Home */,
 				CFCAA1691C8373FF00C3347E /* Other */,
@@ -610,6 +637,8 @@
 		CFCAA1B11C8373FF00C3347E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				CFE9E2361C93F9660013C738 /* Cache */,
+				CFE9E2371C93F9660013C738 /* News */,
 				CFCAA1B21C8373FF00C3347E /* HTTP */,
 			);
 			path = Tools;
@@ -620,10 +649,101 @@
 			children = (
 				CFCAA1B31C8373FF00C3347E /* LSHttpTool.h */,
 				CFCAA1B41C8373FF00C3347E /* LSHttpTool.m */,
-				CFCAA1B51C8373FF00C3347E /* LSNewsTool.h */,
-				CFCAA1B61C8373FF00C3347E /* LSNewsTool.m */,
 			);
 			path = HTTP;
+			sourceTree = "<group>";
+		};
+		CFE9E22E1C93CD3E0013C738 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9E22F1C93CD3E0013C738 /* Controller */,
+				CFE9E2301C93CD3E0013C738 /* Model */,
+				CFE9E2311C93CD3E0013C738 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		CFE9E22F1C93CD3E0013C738 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9E2321C93CD950013C738 /* LSSettingController.h */,
+				CFE9E2331C93CD950013C738 /* LSSettingController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CFE9E2301C93CD3E0013C738 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFE9E2311C93CD3E0013C738 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFE9E2361C93F9660013C738 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9E23B1C93F9D60013C738 /* LSNewsCacheTool.h */,
+				CFE9E23C1C93F9D60013C738 /* LSNewsCacheTool.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		CFE9E2371C93F9660013C738 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9E2381C93F9660013C738 /* LSNewsTool.h */,
+				CFE9E2391C93F9660013C738 /* LSNewsTool.m */,
+				CFE9E23E1C940ABE0013C738 /* LSCommentTool.h */,
+				CFE9E23F1C940ABE0013C738 /* LSCommentTool.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		CFE9E2411C94150A0013C738 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9E2421C94150A0013C738 /* Controller */,
+				CFE9E2431C94150A0013C738 /* Model */,
+				CFE9E2441C94150A0013C738 /* View */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		CFE9E2421C94150A0013C738 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9E2481C9433E00013C738 /* LSCommentController.h */,
+				CFE9E2491C9433E00013C738 /* LSCommentController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CFE9E2431C94150A0013C738 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9E2451C9429520013C738 /* LSComment.h */,
+				CFE9E2461C9429520013C738 /* LSComment.m */,
+				CFAD67411C956450001937FD /* LSCmntlist.h */,
+				CFAD67421C956450001937FD /* LSCmntlist.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFE9E2441C94150A0013C738 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9E24B1C9434A40013C738 /* LSCommentCell.h */,
+				CFE9E24C1C9434A40013C738 /* LSCommentCell.m */,
+				CFE9E24D1C9434A40013C738 /* LSCommentCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -739,6 +859,7 @@
 			files = (
 				CFCAA1C11C8373FF00C3347E /* UMSCommentDetailController.xib in Resources */,
 				CF1D72741C4D851F00F957F1 /* ImageTool.js in Resources */,
+				CFE9E24F1C9434A40013C738 /* LSCommentCell.xib in Resources */,
 				CF1D72761C4D851F00F957F1 /* style.css in Resources */,
 				CFCAA1C81C8373FF00C3347E /* UMSShareListController.xib in Resources */,
 				CFCAA1BF1C8373FF00C3347E /* UMSocialLocalizable.strings in Resources */,
@@ -829,17 +950,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAD67431C956450001937FD /* LSCmntlist.m in Sources */,
 				CFCAA1DA1C83748700C3347E /* AppDelegate.m in Sources */,
+				CFE9E23D1C93F9D60013C738 /* LSNewsCacheTool.m in Sources */,
 				CFC82C401C4A9923005B9E62 /* main.m in Sources */,
+				CFE9E24E1C9434A40013C738 /* LSCommentCell.m in Sources */,
 				CFCAA1BC1C8373FF00C3347E /* LSPreViewController.m in Sources */,
 				CFCAA1BA1C8373FF00C3347E /* LSNewsListController.m in Sources */,
 				CFCAA1D61C83740000C3347E /* LSHttpTool.m in Sources */,
+				CFE9E23A1C93F9660013C738 /* LSNewsTool.m in Sources */,
+				CFE9E2471C9429520013C738 /* LSComment.m in Sources */,
+				CFE9E2341C93CD950013C738 /* LSSettingController.m in Sources */,
 				CFCAA1BB1C8373FF00C3347E /* LSNewsItem.m in Sources */,
 				CFCAA1B81C8373FF00C3347E /* LSNewsContentController.m in Sources */,
+				CFE9E24A1C9433E00013C738 /* LSCommentController.m in Sources */,
+				CFE9E2401C940ABE0013C738 /* LSCommentTool.m in Sources */,
 				CFCAA1BD1C8373FF00C3347E /* LSNewsItemCell.m in Sources */,
 				CFCAA1B91C8373FF00C3347E /* LSNewsContent.m in Sources */,
 				CFCAA1BE1C8373FF00C3347E /* NSString+Tools.m in Sources */,
-				CFCAA1D71C83740000C3347E /* LSNewsTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -988,6 +1116,7 @@
 					"$(PROJECT_DIR)/cnbetaReader/umeng_ios_social_sdk_4.4_arm64/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/cnbetaReader/Classes/Other/Lib/umeng_ios_social_sdk_4.4_arm64/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
+				GCC_PREFIX_HEADER = "/Users/dudusprinkler/Desktop/6666666/cnbetaReader/cnbetaReader/cnbetaRead-prefix.pch";
 				INFOPLIST_FILE = cnbetaReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1052,6 +1181,7 @@
 					"$(PROJECT_DIR)/cnbetaReader/umeng_ios_social_sdk_4.4_arm64/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/cnbetaReader/Classes/Other/Lib/umeng_ios_social_sdk_4.4_arm64/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
+				GCC_PREFIX_HEADER = "/Users/dudusprinkler/Desktop/6666666/cnbetaReader/cnbetaReader/cnbetaRead-prefix.pch";
 				INFOPLIST_FILE = cnbetaReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

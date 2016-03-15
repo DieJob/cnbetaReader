@@ -18,6 +18,7 @@
 #import "MBProgressHUD.h"
 #import <WebKit/WebKit.h>
 #import "LSPreViewController.h"
+#import "LSSettingController.h"
 
 
 
@@ -66,10 +67,15 @@ static NSString *ID = @"cell";
     }
     
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshNewsList)];
-    [self.tableView.mj_header beginRefreshing];
+    BOOL autoRefresh = [[NSUserDefaults standardUserDefaults] boolForKey:AUTOREFRESH];
+    if (autoRefresh) {
+        [self.tableView.mj_header beginRefreshing];
+    }
     
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreNewsList)];
+    [self.tableView.mj_footer setAutomaticallyHidden:YES];
 //    self.tableView.fd_debugLogEnabled = YES;
 
 //    self.tableView.estimatedRowHeight = 178;
@@ -78,20 +84,27 @@ static NSString *ID = @"cell";
     
     self.title = @"新闻列表";
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"user_main_setting"] style:UIBarButtonItemStylePlain target:self action:@selector(setting)];
     
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
         [self registerForPreviewingWithDelegate:self sourceView:self.view];
     }
 }
 
+- (void)setting {
+    [self.navigationController pushViewController:[[LSSettingController alloc] init] animated:YES];
+}
+
 -(void)loadMoreNewsList{
     __weak typeof(self) weakSelf = self;
 //    NSLog(@"上拉刷新");
-    LSNewsItem *lastItem = weakSelf.newsListArray.lastObject;
+    LSNewsItem *lastItem = self.newsListArray.lastObject;
     [LSNewsTool loadMoreNewsListWithSid:lastItem.sid success:^(NSArray *newsListArray) {
         [weakSelf.newsListArray addObjectsFromArray:newsListArray];
         [weakSelf.tableView.mj_footer endRefreshing];
         [weakSelf.tableView reloadData];
+    } failure:^(NSError *error) {
+        [weakSelf.tableView.mj_footer endRefreshing];
     }];
 }
 
@@ -103,7 +116,8 @@ static NSString *ID = @"cell";
         [weakSelf.newsListArray addObjectsFromArray:newsListArray];
         [weakSelf.tableView reloadData];
         [weakSelf.tableView.mj_header endRefreshing];
-        
+    } failure:^(NSError *error) {
+        [weakSelf.tableView.mj_header endRefreshing];
     }];
 }
 
@@ -169,8 +183,11 @@ static NSString *ID = @"cell";
     MBProgressHUD *hud =  [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
     hud.userInteractionEnabled = NO;
     hud.labelText = @"玩命加载中( ｡ớ ₃ờ)ھ";
+    __weak typeof(self)weakSelf = self;
     [LSNewsTool loadNewsContentWithSid:item.sid success:^(LSNewsContent *newsContent) {
-        [self.navigationController pushViewController:[[LSNewsContentController alloc] initWithNewsContent:newsContent] animated:YES];
+        [weakSelf.navigationController pushViewController:[[LSNewsContentController alloc] initWithNewsContent:newsContent] animated:YES];
+    }failure:^(NSError *error) {
+        [hud setHidden:YES];
     }];
 }
 

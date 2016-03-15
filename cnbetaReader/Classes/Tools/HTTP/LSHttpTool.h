@@ -12,4 +12,6 @@
 
 +(void)GET:(NSString *)url parameters:(NSDictionary *)params getContent:(BOOL)content success:(void(^)(id responseObject))success failure:(void(^)(NSError * error))failure;
 
++(void)GET:(NSString *)url parameters:(NSDictionary *)params headers:(NSDictionary *)headers success:(void(^)(id responseObject))success failure:(void(^)(NSError * error))failure;
+
 @end
