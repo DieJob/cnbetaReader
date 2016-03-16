@@ -40,6 +40,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = @"设置";
+    
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame];
     tableView.delegate = self;
     tableView.dataSource = self;
